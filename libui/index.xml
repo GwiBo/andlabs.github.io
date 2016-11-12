@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libuis on andlabs UI</title>
+    <link>https://andlabs.github.io/libui/index.xml</link>
+    <description>Recent content in Libuis on andlabs UI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Sat, 12 Nov 2016 21:45:33 +0530</lastBuildDate>
+    <atom:link href="https://andlabs.github.io/libui/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>libui</title>
+      <link>https://andlabs.github.io/libui/</link>
+      <pubDate>Sat, 12 Nov 2016 21:45:33 +0530</pubDate>
+      
+      <guid>https://andlabs.github.io/libui/</guid>
+      <description>
+
+&lt;h2 id=&#34;announcements&#34;&gt;Announcements&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;2 November 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Added two new functions to replace the deleted &lt;code&gt;uiWindowPosition()&lt;/code&gt; and friends: &lt;code&gt;uiAreaBeginUserWindowMove()&lt;/code&gt; and &lt;code&gt;uiAreaBeginUserWindowResize()&lt;/code&gt;. When used in a &lt;code&gt;uiAreaHandler.Mouse()&lt;/code&gt; event handler, these let you initiate a user-driven mouse move or mouse resize of the window at any point in a uiArea.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;31 October 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;@krakjoe noticed that I accidentally used thread-unsafe code in uiQueueMain() on Unix. Fixed.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;24 October 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;uiWindowSetContentSize()&lt;/code&gt; on Unix no longer needs to call up the GTK+ main loop. As a result, bugs related to strange behavior using that function (and the now-deleted &lt;code&gt;uiWindowSetPosition()&lt;/code&gt; and &lt;code&gt;uiWindowCenter()&lt;/code&gt;) should go away. I&amp;rsquo;ll need to go through the bugs to verify as much, though.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;22 October 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Due to being unable to guarantee they will work (especially as we move toward capability-driven window systems like Wayland), or being unable to work without hacking that breaks other things, the following functions have been removed: &lt;code&gt;uiWindowPosition()&lt;/code&gt;, &lt;code&gt;uiWindowSetPosition()&lt;/code&gt;, &lt;code&gt;uiWindowCenter()&lt;/code&gt;, and &lt;code&gt;uiWindowOnPositionChanged()&lt;/code&gt;. Centering may come back at some point in the future, albeit in a possibly restricted form. A function to initiate a user move when a part of a uiArea is clicked will be provided soon.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;21 October 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;uiDrawTextWeightUltraBold&lt;/code&gt; is now spelled correctly. Thanks to @krakjoe.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;18 June 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Help decide &lt;a href=&#34;https://github.com/andlabs/libui/issues/159&#34;&gt;the design of tables and trees in libui&lt;/a&gt;; the implementation starts within the next few days, if not tomorrow!&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;17 June 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CMake 3.1.0 is now required.&lt;/strong&gt; This is due to CMake&amp;rsquo;s rapid development pace in the past few years adding things libui needs to build on as many systems as possible. If your OS is supported by libui but its repositories ship with an older version of CMake, you will need to find an updated one somewhere.&lt;/li&gt;
+&lt;li&gt;Please help &lt;a href=&#34;https://github.com/andlabs/libui/issues/152&#34;&gt;plan out a better menu API&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;5 June 2016&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alpha 3.1 is here.&lt;/strong&gt; This was a much-needed update to Alpha 3 that changes a few things:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;The build system is now cmake.&lt;/strong&gt; cmake 2.8.11 or higher is needed.&lt;/li&gt;
+&lt;li&gt;Static linking is now fully possible.&lt;/li&gt;
+&lt;li&gt;MinGW linking is back, but static only.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Old announcements can be found in the &lt;a href=&#34;https://github.com/andlabs/libui/blob/master/ANNOUNCE.md&#34;&gt;ANNOUNCE.md&lt;/a&gt; file.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

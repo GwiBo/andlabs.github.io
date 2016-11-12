@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gouis on andlabs UI</title>
+    <link>https://andlabs.github.io/goui/index.xml</link>
+    <description>Recent content in Gouis on andlabs UI</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Sat, 12 Nov 2016 21:45:24 +0530</lastBuildDate>
+    <atom:link href="https://andlabs.github.io/goui/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>andlabs/ui</title>
+      <link>https://andlabs.github.io/goui/</link>
+      <pubDate>Sat, 12 Nov 2016 21:45:24 +0530</pubDate>
+      
+      <guid>https://andlabs.github.io/goui/</guid>
+      <description>
+
+&lt;h2 id=&#34;golang-ui&#34;&gt;golang ui&lt;/h2&gt;
+
+&lt;p&gt;Golang UI using bindings to libui.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
